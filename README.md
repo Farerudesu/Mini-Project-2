@@ -70,7 +70,7 @@ Alur:
 
 ## 6.Menu List Projek 
 Menu ini berfungsi untuk menampilkan seluruh projek yang tersimpan dalam bentuk tabel yang rapi.  
-<img width="586" height="293" alt="image" src="https://github.com/user-attachments/assets/83f1c438-44a1-468b-a409-5f9beb5b9468" />
+<img width="674" height="303" alt="image" src="https://github.com/user-attachments/assets/67fabafe-2b73-4159-a9c6-c7c69780ffc5" />
 
 
 
@@ -298,12 +298,14 @@ Program menampilkan seluruh data projek dalam bentuk tabel dengan kolom:
 - Status
 Pencetakan list disini menggunakan Library pretty table agar output tercetak dengan bentuk tabel yang rapi 
 ```
-    def list(projek):
+   def list(projek):
     try:
         tabel = PrettyTable()
-        tabel.field_names = ["Judul Projek", "Jenis", "Durasi", "Deadline", "Status"]
-        for p in projek:
-            tabel.add_row([p[0], p[1], p[2], p[3], p[4]])
+        tabel.field_names = ["No", "Judul Projek", "Jenis", "Durasi", "Deadline", "Status"]
+
+        for idx, p in enumerate(projek, start=1):
+            tabel.add_row([idx, p[0], p[1], p[2], p[3], p[4]])
+
         print(tabel)
     except Exception as e:
         print(f"Terjadi kesalahan saat menampilkan projek: {e}")
