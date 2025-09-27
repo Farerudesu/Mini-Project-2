@@ -19,9 +19,13 @@ Dengan fitur **CRUD** (Create, Read, Update, Delete) dan Login Pengguna dengan H
 
 ## 1.Login Page
 <br/>Menu ini akan tampil pada saat pertama kali program dijalankan, User di minta untuk login username beserta password
-<img width="748" height="171" alt="image" src="https://github.com/user-attachments/assets/1247c280-be68-4a28-b6b9-0af6e46cd363" />
+
+<br/<img width="748" height="171" alt="image" src="https://github.com/user-attachments/assets/1247c280-be68-4a28-b6b9-0af6e46cd363" />
+
 <br/>User di beri 3x kesempatan untuk login, jika gagal maka program akan terhenti
+
 <br/><img width="600" height="378" alt="image" src="https://github.com/user-attachments/assets/703af855-b708-4d1b-91ea-198e0547c71a" />
+
 <br/>Jika login berhasil maka user akan di bawa ke menu Utama 
  
 ## 2. Menu Utama
