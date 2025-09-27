@@ -386,8 +386,8 @@ while True:
 Kode di atas di bagian input selalu di beri error handling try dan except gunanya untuk:
 - 1.Jika user menekan Ctrl+Z / Ctrl+D, maka akan masuk ke blok except EOFError dan tampil pesan.
 - 2.Jika user menekan Ctrl+C, maka program akan masuk ke except KeyboardInterrupt dengan pesan jelas.
-- Jika user mengetik huruf atau simbol (contoh: abc), maka int("abc") akan gagal, dan ditangani oleh except ValueError.
--Jika ada error lain (misalnya karena bug internal), maka except Exception as e akan menangkap dan menampilkan pesan error.
+- 3.Jika user mengetik huruf atau simbol (contoh: abc), maka int("abc") akan gagal, dan ditangani oleh except ValueError.
+- 4.Jika ada error lain (misalnya karena bug internal), maka except Exception as e akan menangkap dan menampilkan pesan error.
 ```
 try:
 except EOFError:
