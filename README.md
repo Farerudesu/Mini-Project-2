@@ -12,7 +12,7 @@
 # Program Manajemen Projek Multimedia
 
 Program sederhana berbasis **Python (CLI)** untuk mengelola daftar projek multimedia (Video Editing).  
-Dengan fitur **CRUD** (Create, Read, Update, Delete) 
+Dengan fitur **CRUD** (Create, Read, Update, Delete) dan Login Pengguna dengan Hak yang Berbeda
 # Alur Program
 
 ## 1.Login Page
