@@ -1,4 +1,3 @@
-Muhammad Fahriel <br/>
 2509116050
 
 <pre> 
@@ -16,64 +15,110 @@ Program sederhana berbasis **Python (CLI)** untuk mengelola daftar projek multim
 Dengan fitur **CRUD** (Create, Read, Update, Delete) 
 # Alur Program
 
-## 1.Home Page
->Menu ini akan tampil pada saat pertama kali program dijalankan, User dapat memilih opsi dengan memasukan input nomor ataupun mengetik 
-<img width="965" height="440" alt="image" src="https://github.com/user-attachments/assets/1b763ec1-d7a7-4fe8-86aa-fcd0601db3f1" /> <br/>
+## 1.Login Page
+Menu ini akan tampil pada saat pertama kali program dijalankan, User di minta untuk login username beserta password
+<img width="748" height="171" alt="image" src="https://github.com/user-attachments/assets/1247c280-be68-4a28-b6b9-0af6e46cd363" /><br/>
+User di beri 3x kesempatan untuk login, jika gagal maka program akan terhenti<br/>
+<img width="600" height="378" alt="image" src="https://github.com/user-attachments/assets/703af855-b708-4d1b-91ea-198e0547c71a" />
+<br/>Jika login berhasil maka user akan di bawa ke menu Utama 
+ 
+## 2. Menu Utama
+Menu ini akan tampil setelah user login dengan akun ini adalah laman utama untuk memilih opsi, terdapat juga keterangan Role,  sebagai Viewer / Admin <br/>
+<img width="566" height="273" alt="image" src="https://github.com/user-attachments/assets/a3daf656-49f3-4fbe-85f0-38dfe104de8f" />
+
+
                         
-## 2.Menu Tambah Projek 
->Menu ini berfungsi untuk menambahkan projek baru dengan detail:
+## 3.Menu Tambah Projek 
+Menu ini berfungsi untuk menambahkan projek baru dengan detail:
 - **Judul**
 - **Jenis Konten** (Vlog, Short Movie, Dokumenter, Youtube, Reels, dll.)
 - **Durasi** (detik)
 - **Deadline** (DD-MM-YYYY)
 - **Status** (Selesai/Belum)
-<img width="977" height="581" alt="image" src="https://github.com/user-attachments/assets/572e130d-a326-4eb1-9b2e-220465e96455" />
+<img width="751" height="435" alt="image" src="https://github.com/user-attachments/assets/1b3e6d22-6bdb-40d7-8e90-851943708784" />
+<br/>Apabila akun hanya sebagai viewer maka tidak bisa menambahkan projek
+<img width="516" height="224" alt="image" src="https://github.com/user-attachments/assets/d1bdba0d-ad1f-454e-948c-2d0b7b6581e3" />
 
-## 3.Menu Hapus Projek
->Menu ini berfungsi untuk menghapus projek dengan memasukan Nomor projek
 
-<br/>Alur:
-1. Masukkan **nomor** projek yang ingin hapus.  
-2. Jika ditemukan, maka projek dengan nomor tersebut akan di hapus  
-3. Menampilkan pesan berhasil
-<img width="860" height="331" alt="image" src="https://github.com/user-attachments/assets/ef52fe83-cb7d-45f7-8370-117a5881bf2c" />
 
-## 4.Menu Perbarui Projek  
+
+## 4.Menu Hapus Projek
+Menu ini berfungsi untuk menghapus projek dengan memasukan Nomor projek
+
+<br/>**Alur:**
+- Masukkan **nomor** projek yang ingin hapus.  
+- Jika ditemukan, maka projek dengan nomor tersebut akan di hapus  
+- Menampilkan pesan berhasil
+  
+> Catatan: Pencarian berdasarkan **nomor** projek
+<img width="558" height="273" alt="image" src="https://github.com/user-attachments/assets/7bdd973b-7a12-484b-bdd9-3dcbbf466696" />
+<br/>Jika login sebagai viewer maka tidak bisa menghapus projek
+<br/><img width="467" height="281" alt="image" src="https://github.com/user-attachments/assets/923bb576-23f7-458a-b7e9-c79c750e533d" />
+
+
+## 5.Menu Perbarui Projek  
 Alur:
-1. Masukkan **nomor** projek yang ingin diperbarui.  
-2. Jika ditemukan, masukkan **status baru** (Selesai/Belum).  
-3. Data lain (judul/jenis/durasi/deadline) **tetap**, hanya status yang berubah.
+- Masukkan **nomor** projek yang ingin diperbarui.  
+- Jika ditemukan, masukkan **status baru** (Selesai/Belum).  
+- Data lain (judul/jenis/durasi/deadline) **tetap**, hanya status yang berubah.
 
 > Catatan: Pencarian berdasarkan **nomor** projek
 
-<img width="687" height="443" alt="image" src="https://github.com/user-attachments/assets/b81a9522-7c92-4758-b4ee-648adf9bdd6c" />
+<img width="543" height="337" alt="image" src="https://github.com/user-attachments/assets/dffe3302-7b45-407d-b8ea-7c24f9aa8864" />
+<br/>Jika login sebagai viewer maka tidak bisa memperbarui projek
+<br/><img width="483" height="260" alt="image" src="https://github.com/user-attachments/assets/6dbcbf68-c093-4fee-a585-fcb4e2fc46f0" />
 
-## 5.Menu List Projek 
->Menu ini berfungsi untuk menampilkan seluruh projek yang tersimpan dalam bentuk tabel.  
-<img width="1225" height="578" alt="image" src="https://github.com/user-attachments/assets/f3245ca2-6107-47e7-bfcf-8f51e96dec8e" />
-
-
-## 6.Menu Keluar 
- >Menu ini berfungsi untuk keluar dari program 
-<img width="584" height="315" alt="image" src="https://github.com/user-attachments/assets/d92b7db0-f8ef-46f1-9411-fa61e1c1b0f5" />
+## 6.Menu List Projek 
+Menu ini berfungsi untuk menampilkan seluruh projek yang tersimpan dalam bentuk tabel yang rapi.  
+<img width="586" height="293" alt="image" src="https://github.com/user-attachments/assets/83f1c438-44a1-468b-a409-5f9beb5b9468" />
 
 
 
-# Kondisi lainnya
-> Jika user menginput menu yg tidak terdapat dalam daftar  <br/>
-<img width="537" height="327" alt="image" src="https://github.com/user-attachments/assets/c45ba668-3eaf-4171-b325-d8124f19bb03" /> <br/>
+## 7.Menu Keluar 
+Menu ini berfungsi untuk keluar dari program 
 
-> Jika user menginput nomor projek yang tidak valid di menu hapus  <br/>
-<img width="605" height="368" alt="image" src="https://github.com/user-attachments/assets/0da8231f-f12c-44d6-be9e-1139b1e744e7" /> <br/>
+<br/>
+<img width="234" height="112" alt="image" src="https://github.com/user-attachments/assets/2cc2d4c2-17af-4b80-afe9-f12dc6a1375e" />
 
->Jika user menginput nomor projek yang tidak valid di menu update  <br/>
-<img width="650" height="375" alt="image" src="https://github.com/user-attachments/assets/68622e79-8a34-4890-ae2c-05200d2f1a8c" />
+
+
+# Error Handling
+
+>Keyboardinterrupt dan EOFError dan exception info
+
+<br/>
+<img width="658" height="235" alt="image" src="https://github.com/user-attachments/assets/3f504316-bf9a-4a53-bd39-1bc4e0535c8e" />
+<br/>
+<img width="411" height="337" alt="image" src="https://github.com/user-attachments/assets/fe26d21b-de79-478a-bbf9-f28c825d87fe" />
+<br/>
+<img width="288" height="121" alt="image" src="https://github.com/user-attachments/assets/ce96492f-64d1-4301-8cb3-2c7172c2444f" />
+<br/>
+<img width="876" height="141" alt="image" src="https://github.com/user-attachments/assets/2cfed562-1ccc-43a8-b63e-055791e7dcd5" />
+<br/>
+>Input tidak valid / ValueError
+<br/>
+<img width="220" height="88" alt="image" src="https://github.com/user-attachments/assets/8f0a7999-6a5e-4e22-aa1b-f4f3b8352cd4" />
+<br/>
+<img width="445" height="125" alt="image" src="https://github.com/user-attachments/assets/fe11af31-0d6f-480c-a7d4-513d3510c2a6" />
+<br/>
+<img width="454" height="133" alt="image" src="https://github.com/user-attachments/assets/0c461e6a-fb09-4fd7-ab3b-81bdfc42dbc3" />
+<br/>
+
+<br/>
+
+
+
 
 
 # Penjelasan Kode <br/>
 
->Inisiasi Data
+## Import LIbrary, Inisiasi Data list of tuples dan dictionary akun
+Prettytable di gunakan untuk mencetak tabel dengan rapih sementara itu pwinput digunakan untuk sensor password dengan bintang *
+<br/>Variabel projek adalah list berisi tuple (judul, jenis, durasi, deadline, status). Ini jadi “database” awal sebelum ada penambahan/perubahan di runtime.
+<br/>Daftar akun disimpan dalam dictionary akun agar mudah dicek saat login.
 ```
+from prettytable import PrettyTable
+import pwinput
 projek = [
     ("Teaser PKKMB", "Vlog", "120", "20-09-2025", "Belum"),
     ("Short Film Desa", "Short Movie", "600", "30-09-2025", "Selesai"),
@@ -85,127 +130,270 @@ projek = [
     ("Makan bang ft Young lex", "Vlog", "1390", "03-02-2020", "Belum"),
 ]
 
-```
-Variabel projek berupa list yang berisi data proyek dalam bentuk tuple.
-Setiap tuple berisi lima elemen: (judul, jenis, durasi, deadline, status).
-Data awal ini berfungsi sebagai isi database sederhana sebelum pengguna menambah/mengubah data.
-<br/>
->mencetak ASCII Art (dekorasi), dan menjalankan Loop tak terhingga serta menampilkan Menu
-```
-print (""" ...ASCII... """)
-while True:
-    print("")
-    print("-" * 38)
-    print(f"|Program manajemen projek multimedia |\n| {"1.Tambah projek":<34} |\n| {"2.Hapus projek":<34} |\n| {"3.Update Projek":<34} |\n| {"4.List Projek":<34} |\n| {"5.Keluar" :<34}|")
-    print("-" * 38) 
+akun = {"fareru": "farel123",
+        "relfa" : "rafel123",
+        "admin123" : "bestofriendo"
 
-    userchoice = input("Pilih 1-5 atau Ketik opsi\n>>>")
 ```
-kode di atas mencetak ASCII art (dekorasi) di menu utama,
-kemudian menjalankan Infinite loop (While true) agar program terus menampilkan menu sampai user memilih Keluar.
-print(" ") dengan "-"*38 membuat  bingkai menu agar terlihat rapih.
-f-string dengan ":<34" artinya mencetak rata kiri agar tulisan sejajar.
-kemudian meminta input dari user (angka "1"–"5" atau teks seperti "Tambah").
 
->Menu Tambah (Create)
+##  Fungsi login dan role akun
+- Program ini mengimplementasikan sistem login sebelum menu utama ditampilkan
+- Pengguna harus memasukkan username dan password.
+- Jika gagal login setelah 3x percobaan, program terhenti dan tidak menampilkan menu
+- Jika login berhasil, program mengembalikan dua nilai, yaitu *terlogin* (nama pengguna) dan *status* (role pengguna: Owner atau Viewer).
+- Setiap Fungsi CRUD Akan melakukan pengecekan jika akun tersebut hanya viewer maka tidak dapat mengaksesnya
+ ```
+if status == "Viewer":
+            print("Maap Anda tidak ada ijin untuk memperbarui projek!")
+            return
 ```
-    if userchoice == "1" or userchoice == "Tambah":
+
+
+
+```
+def login():
+    kesempatan = 3
+    while True:
+        try:
+            print("masukan username dan password!")
+            username = input("Username:")
+            password = pwinput.pwinput(prompt="Password: ", mask="*")
+            if username in akun and akun[username] == password:
+                print (f"login berhasil sebagai {username}")
+                if username == "admin123":
+                    return username,"Owner"
+                else:
+                    return username, "Viewer"
+            else: 
+                print ("Username/Password salah!!")
+                kesempatan -=1
+                print ("Sisa kesempatan:", kesempatan)
+                if kesempatan <= 0 :
+                    print("anda telah mencapai limit login sebanyak 3x")
+                    break
+                else:
+                    continue
+        except KeyboardInterrupt:
+            print("Errorr CTRL + C")
+        except EOFError:
+            print ("Error CTRL + Z")
+        except Exception as e:
+            print (f"Terjadi kesalahan: {e}")
+            
+```
+
+## Fungsi Tambah (Create)
+Pada bagian ini, user diminta memasukkan lima komponen utama dari suatu projek yaitu:
+- judul
+- jenis
+- durasi
+- deadline
+- status.
+<br/>Data yang dimasukkan akan disimpan dalam bentuk list of tuple, kemudian ditambahkan ke dalam list projek dengan menggunakan fungsi .append().
+Program menampilkan kembali data yang baru ditambahkan sebagai bentuk konfirmasi bahwa proses "Create" telah berhasil.
+```
+    def tambah(projek, status):
+    try:
+        if status == "Viewer":
+            print("Maap Anda tidak ada ijin untuk menambah projek!")
+            return
         namaprojek = input("Masukan nama projek:\n>>>")
         jeniskonten = input("Masukan jenis konten: \n Vlog, Short Movie, Dokumenter, Youtube, Reels, lainnya \n>>>")
         durasi = input ("Masukan durasi konten (dalam detik):\n>>>")
         deadline= input("Masukan deadline projek (DD-MM-YYYY):\n>>>")
-        status = input("Masukan status:\n>>>")
-        projek.append((namaprojek, jeniskonten, durasi, deadline, status))
+        status_input = input("Masukan status:\n>>>")
+        projek.append((namaprojek, jeniskonten, durasi, deadline, status_input))
         print(f"Berhasil menambahkan: {namaprojek}")
+    except EOFError:
+            print ("Error CTRL + Z")
+    except KeyboardInterrupt:
+        print("Errorr CTRL + C")
+    except Exception as e:
+        print(f"Terjadi kesalahan saat menambah projek: {e}")
         
 ```
-Pada bagian ini, user diminta memasukkan lima komponen utama dari suatu projek yaitu judul,  jenis, durasi, deadline, dan status.
-Data yang dimasukkan akan disimpan dalam bentuk tuple, kemudian ditambahkan ke dalam list projek dengan menggunakan fungsi .append().
-Program menampilkan kembali data yang baru ditambahkan sebagai bentuk konfirmasi bahwa proses "Create" telah berhasil.
 
 
->Menu Hapus (Delete)
+## Fungsi Hapus (Delete)
+- User diminta memasukkan nomor projek yang ingin dihapus.
+- Program ini menggunakan input integer, kemudian di kurangi 1 agar sama urutannya dengan index []. Jika nomor tidak ditemukan, maka akan menampilkan pesan kesalahan.
+Jika ditemukan, projek nya akan dihapus dengan metode .pop(), dan program menampilkan judul projek yang berhasil dihapus.
 ```
-    elif userchoice =="2" or userchoice== "Hapus":
-        cari = int(input("Masukkan Nomor projek yang mau dihapus: "))
+    def delete(projek, status):
+    try:
+        if status == "Viewer":
+            print("Maap Anda tidak ada ijin untuk menghapus projek!")
+            return
+        try:
+            cari = int(input("Masukkan Nomor projek yang mau dihapus: "))
+        except ValueError:
+            print("Input tidak valid! Nomor projek harus berupa angka.")
+            return
         cari -=1
         if cari  < 0 or cari >= len(projek):
             print("Nomor projek tidak valid!")
-            continue
-        else:
-            terhapus = projek.pop(cari)
-            print(f"Projek '{terhapus[0]}' berhasil dihapus.")
+            return
+        terhapus = projek.pop(cari)
+        print(f"Projek '{terhapus[0]}' berhasil dihapus.")
+    except EOFError:
+            print ("Error CTRL + Z")
+    except KeyboardInterrupt:
+        print("Errorr CTRL + C")
+    except Exception as e:
+        print(f"Terjadi kesalahan saat menghapus projek: {e}")
 ```
 
-user diminta memasukkan nomor projek yang ingin dihapus.
-program menggunakan input integer kemudian di kurangi 1 agar sama dengan index [] . Jika nomor tidak ditemukan, maka akan menampilkan pesan kesalahan.
-Jika ditemukan, projek nya akan dihapus dengan metode .pop(), dan program menampilkan judul projek yang berhasil dihapus.
-
->Menu Update (Update)
+## Fungsi Perbarui (Update)
+- user memasukkan nomor projek yang ingin diperbarui statusnya.
+- program menggunakan input integer untuk menemukan indeks projek yang dimaksud.
+- Jika ditemukan, elemen status pada tuple diganti dengan input yang dimasukkan oleh user, dan elemen lainnya hanya di duplikat  
+- Program kemudian menampilkan pesan konfirmasi bahwa status telah berhasil diperbarui.
+- jika tidak di temukan nomor proyek maka akan menampilkan pesan invalid
 ```
-       elif userchoice == "3" or userchoice=="Update":
-        
-        update= int(input("Masukan nomor projek yang ingin di perbarui\n>>"))
+      def update(projek, status):
+    try:
+        if status == "Viewer":
+            print("Maap Anda tidak ada ijin untuk memperbarui projek!")
+            return
+        try:
+            update= int(input("Masukan nomor projek yang ingin di perbarui\n>>"))
+        except ValueError:
+            print("Input tidak valid! Nomor projek harus berupa angka.")
+            return
+        except EOFError:
+            print ("Error CTRL + Z")
+        except KeyboardInterrupt:
+            print("Errorr CTRL + C")
+            
         update -= 1
         if update < 0 or update >= len(projek):
             print("Nomor projek tidak valid!")
-            continue  
-        else:
-            inputstatus = input("Update Status (Selesai/Belum) \n>>") 
-            print("Menyimpan...")
-            projek [update] = (    
+            return
+        inputstatus = input("Update Status (Selesai/Belum) \n>>") 
+        print("Menyimpan...")
+        projek[update] = (    
             projek[update][0],
             projek[update][1],
             projek[update][2],
             projek[update][3],   
             inputstatus
-            )
+        )
         print(f"projek '{projek[update][0]}' berhasil di perbarui ")
+    except KeyboardInterrupt:
+        print("\nDibatalkan oleh pengguna.")
+    except Exception as e:
+        print(f"Terjadi kesalahan saat memperbarui projek: {e}")
 
 ```
-user memasukkan nomor projek yang ingin diperbarui statusnya.
-program menggunakan input integer untuk menemukan indeks projek yang dimaksud.
-Jika ditemukan, elemen status pada tuple diganti dengan input yang dimasukkano oleh user, dan elemen lainnya hanya di duplikat  
-Program kemudian menampilkan pesan konfirmasi bahwa status telah berhasil diperbarui.
-jika tidak di temukan nomor proyek maka akan menampilkan pesan invalid
 
 
->Menu List Projek (Read)
-```
-    elif userchoice =="4" or userchoice=="List":
-        print("-" * 100)
-        print(f" {"No" :<2} | {'Projek':<27} | {'Jenis':<12} | {'Durasi':<12} | {'Deadline':<15} | {'Status':<10}" )
-        print("-" * 100)
-        number = 0
-        for i in projek:
-            number +=1
-            print(f"{number:<3} | {i[0]:<28}| {i[1]:<13}| {i[2]:<12} | {i[3]:<15} | {i[4]:<10}")
-        print ("-" * 100)
-```
-Program menampilkan seluruh data projek dalam bentuk tabel dengan kolom: Nomor, Judul, Jenis, Durasi, Deadline, dan Status.
-Format string dengan spesifikasi :<width digunakan agar setiap kolom rata kiri dan sejajar.
 
->Menu Exit Program
+## Fungsi List Projek (Read)
+Program menampilkan seluruh data projek dalam bentuk tabel dengan kolom:
+- Nomor
+- Judul
+- Jenis
+- Durasi
+- Deadline
+- Status
+Pencetakan list disini menggunakan Library pretty table agar output tercetak dengan bentuk tabel yang rapi 
 ```
-elif userchoice == "5" or userchoice=="Keluar":
-    print("Menyimpan data....")
-    print("Data Tersimpan..") 
-    break
+    def list(projek):
+    try:
+        tabel = PrettyTable()
+        tabel.field_names = ["Judul Projek", "Jenis", "Durasi", "Deadline", "Status"]
+        for p in projek:
+            tabel.add_row([p[0], p[1], p[2], p[3], p[4]])
+        print(tabel)
+    except Exception as e:
+        print(f"Terjadi kesalahan saat menampilkan projek: {e}")
 
 ```
-Saat user memilih keluar, Menampilkan pesan penyimpanan data.
+
+## Menu Utama Program
+- Mencetak ASCII ART bertuliskan "MULTIMEDIA"  
+```
+print ("""                                                                                 
+,--.   ,--.,--. ,--.,--.,--------.,--.,--.   ,--.,------.,------.  ,--.  ,---.   
+|   `.'   ||  | |  ||  |'--.  .--'|  ||   `.'   ||  .---'|  .-.  \ |  | /  O  \  
+|  |'.'|  ||  | |  ||  |   |  |   |  ||  |'.'|  ||  `--, |  |  \  :|  ||  .-.  | 
+|  |   |  |'  '-'  '|  '--.|  |   |  ||  |   |  ||  `---.|  '--'  /|  ||  | |  | 
+`--'   `--' `-----' `-----'`--'   `--'`--'   `--'`------'`-------' `--'`--' `--'  """)
+
+```
+
+- Pemangilan Fungsi Login 1x saja 
+```
+terlogin, status = login()
+```
+
+
+- Kode Menu Utama menggunakan Pengulangan hingga user meminta menu 5 atau keluar dan menggunakan prettytable agar rapi
+- Saat user memilih keluar, Menampilkan pesan penyimpanan data.
 Menghentikan loop dengan break.
+```
+while True:
+    
+    if terlogin is None:
+        print("Coba Lagi Nanti!")
+        break
+    
+    else:
+        tabel = PrettyTable()
+        tabel.field_names = ["No", "Menu"]
+        tabel.add_row(["1", "Tambah projek"])
+        tabel.add_row(["2", "Hapus projek"])
+        tabel.add_row(["3", "Update projek"])
+        tabel.add_row(["4", "List projek"])
+        tabel.add_row(["5", "Keluar"])
+        print(tabel)
+        print (f"Hallo {terlogin}! \nRole:{status}")
+        try:
+            userchoice = input("Pilih 1-5 atau Ketik opsi\n>>>") 
+            if userchoice == "1" or userchoice == "Tambah":
+                tambah(projek, status)
+
+            elif userchoice =="2" or userchoice== "Hapus":
+                delete(projek, status)
+
+            elif userchoice == "3" or userchoice=="Update":
+                update(projek, status)
+
+            elif userchoice =="4" or userchoice=="List":
+                list(projek)
+                
+            elif userchoice == "5" or userchoice=="Keluar":
+                print("Menyimpan data....")
+                #simpan data pakai json (next update)
+                print("Data Tersimpan..") 
+                break    
+            else:
+                print("Masukan input yang valid!")
+        except EOFError:
+            print ("Error CTRL + Z")
+        except KeyboardInterrupt:
+            print("Errorr CTRL + C")
 
 ```
-else:
-    print("Masukan input yang valid!")
 
+
+## Mekanisme Error Handling 
+
+Kode di atas di bagian input selalu di beri error handling try dan except gunanya untuk:
+- 1.Jika user menekan Ctrl+Z / Ctrl+D, maka akan masuk ke blok except EOFError dan tampil pesan.
+- 2.Jika user menekan Ctrl+C, maka program akan masuk ke except KeyboardInterrupt dengan pesan jelas.
+- Jika user mengetik huruf atau simbol (contoh: abc), maka int("abc") akan gagal, dan ditangani oleh except ValueError.
+-Jika ada error lain (misalnya karena bug internal), maka except Exception as e akan menangkap dan menampilkan pesan error.
 ```
-Jika user memasukkan pilihan menu yang tidak valid, program memberikan pesan kesalahan dan menampilkan ulang menu utama.
-
+try:
+except EOFError:
+ print ("Error CTRL + Z")
+except KeyboardInterrupt:
+ print("Errorr CTRL + C")
+except ValueError:
+ print("Input tidak valid! Nomor projek harus berupa angka.")
+```
 
 # Flowchart
 
->flowchart image
-<img width="2343" height="1439" alt="Flowchart Github drawio" src="https://github.com/user-attachments/assets/a434cf16-bd7b-4f74-96b3-f76535ef4c82" />
 
