@@ -398,4 +398,5 @@ except ValueError:
 
 # Flowchart
 
+![flowchart minpr2](https://github.com/user-attachments/assets/978f5b36-209b-4cff-9926-344bd1759bce)
 
